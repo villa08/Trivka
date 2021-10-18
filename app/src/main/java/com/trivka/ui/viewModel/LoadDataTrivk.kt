@@ -28,7 +28,7 @@ object LoadDataTrivk {
                 ,
                 answer = arrayListOf(
                     AnswerModel(option = "Flor de Cerezo", truth = true),
-                    AnswerModel(option = "Flor de Narita", truth = false),
+                    AnswerModel(option = "Flor de Loto", truth = false),
                     AnswerModel(option = "Flor de Tokio", truth = false),
                     AnswerModel(option = "Flor de Narita", truth = false)
                 )
@@ -68,7 +68,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Geografia",
                 question = "¿Qué país tiene la mayor cantidad de islas en el mundo?",
                 answer = arrayListOf(
                     AnswerModel(option = "Suecia", truth = true),
@@ -79,7 +79,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Geografia",
                 question = "¿Cuál es el país más pequeño del mundo?",
                 answer = arrayListOf(
                     AnswerModel(option = "Liechtenstein", truth = false),
@@ -90,7 +90,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Geografia",
                 question = "¿Cuál es la capital de Canadá?",
                 answer = arrayListOf(
                     AnswerModel(option = "Toronto", truth = false),
@@ -101,7 +101,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Geografia",
                 question = "¿Nombra la cordillera más larga (no más alta) del mundo?",
                 answer = arrayListOf(
                     AnswerModel(option = "Cordillera Central", truth = false),
@@ -112,7 +112,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Geografia",
                 question = "¿Cuál es el río más largo del mundo?",
                 answer = arrayListOf(
                     AnswerModel(option = "Nilo", truth = true),
@@ -123,7 +123,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Arte y literatura",
                 question = "¿Qué artista pinto la obra Noche Estrellada?",
                 answer = arrayListOf(
                     AnswerModel(option = "Van Gogh", truth = true),
@@ -134,7 +134,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Arte y literatura",
                 question = "¿Cuál es la serie de libros mejor vendida del siglo 21?",
                 answer = arrayListOf(
                     AnswerModel(option = "Harry Potter", truth = true),
@@ -145,7 +145,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Arte y literatura",
                 question = "¿Cuál es el idioma que tiene más palabras (según su diccionario)?",
                 answer = arrayListOf(
                     AnswerModel(option = "Ingles", truth = true),
@@ -156,7 +156,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Arte y literatura",
                 question = "¿Qué artista pinto la Mona Lisa?",
                 answer = arrayListOf(
                     AnswerModel(option = "Miguel Angel", truth = false),
@@ -167,7 +167,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Arte y literatura",
                 question = "¿Cuál es la obra más famosa de Edvard Munch?",
                 answer = arrayListOf(
                     AnswerModel(option = "Ansiedad", truth = false),
@@ -178,7 +178,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Historia",
                 question = "¿Cuándo se inauguró el metro de Londres?",
                 answer = arrayListOf(
                     AnswerModel(option = "1901", truth = false),
@@ -189,7 +189,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Historia",
                 question = "¿Quién inventó la World Wide Web, y cuándo?",
                 answer = arrayListOf(
                     AnswerModel(option = "Steve Jobs", truth = false),
@@ -200,7 +200,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Historia",
                 question = "¿Quién fue el fundador de Tesla Motors?",
                 answer = arrayListOf(
                     AnswerModel(option = "Thomas Alba Edison", truth = false),
@@ -211,7 +211,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Historia",
                 question = "¿Qué ocurrió el 20 de Julio de 1969?",
                 answer = arrayListOf(
                     AnswerModel(option = "El alunizaje del Apollo 11", truth = true),
@@ -222,7 +222,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Historia",
                 question = "¿Cuándo se publicó la primera edición de la revista Vogue?",
                 answer = arrayListOf(
                     AnswerModel(option = "1995", truth = false),
@@ -234,7 +234,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Cultura y musica",
                 question = "¿En qué país nació Héctor Lavoe?",
                 answer = arrayListOf(
                     AnswerModel(option = "Puerto Rico", truth = true),
@@ -245,7 +245,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Cultura y musica",
                 question = "¿De qué país son originarios los Beatles?",
                 answer = arrayListOf(
                     AnswerModel(option = "Estados Unidos", truth = false),
@@ -256,7 +256,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Cultura y musica",
                 question = "¿Cuántas son las notas musicales? ?",
                 answer = arrayListOf(
                     AnswerModel(option = "7", truth = true),
@@ -267,7 +267,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Cultura y musica",
                 question = "¿El bandoneón se utiliza en él?",
                 answer = arrayListOf(
                     AnswerModel(option = "Tango", truth = true),
@@ -278,7 +278,7 @@ object LoadDataTrivk {
             ),
             TrivkModel(
                 id = UUID.randomUUID().toString(),
-                category = "Conocimiento general",
+                category = "Cultura y musica",
                 question = "¿Cuántas teclas tiene un piano?",
                 answer = arrayListOf(
                     AnswerModel(option = "55", truth = false),
