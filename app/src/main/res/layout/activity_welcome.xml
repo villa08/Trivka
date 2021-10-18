@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.WelcomeActivity">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trivka"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#E91E63"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:textColor="#323233"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_start_game"
+        android:text="A continuación tendrás un juego que consta de cinco categorías, con cinco preguntas cada una, en las cuales acumularás puntos hasta ser un TRIVK campeón"/>
+
+    <Button
+        android:id="@+id/button_start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/button_start"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
