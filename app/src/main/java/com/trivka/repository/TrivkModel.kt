@@ -5,7 +5,7 @@ data class TrivkModel(
     val category: String,
     val question: String,
     var answerUser: String = "",
-    val winds: Int = 0,
+    var winds: Int = 0,
     val answer: List<AnswerModel>
 )
 

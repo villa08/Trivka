@@ -51,6 +51,13 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.ViewHolder>() {
         //holder.binding.imageViewRowIncrease.setOnClickListener {}
 
         holder.binding.checkBoxAnswerOne.setOnClickListener {
+
+            if(items[position].answer[0].truth){
+                items[position].apply { winds =  5}
+            } else {
+                items[position].apply { winds =  0}
+            }
+
             items[position].apply { answerUser = items[position].answer[0].option }
             onClickItem?.invoke(items[position])
             holder.binding.checkBoxAnswerOne.isChecked = true
@@ -66,6 +73,11 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.ViewHolder>() {
         }
 
         holder.binding.checkBoxAnswerTwo.setOnClickListener {
+            if(items[position].answer[1].truth){
+                items[position].apply { winds =  5}
+            } else {
+                items[position].apply { winds =  0}
+            }
             items[position].apply { answerUser = items[position].answer[1].option }
             onClickItem?.invoke(items[position])
             holder.binding.checkBoxAnswerOne.isClickable = false
@@ -81,6 +93,11 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.ViewHolder>() {
         }
 
         holder.binding.checkBoxAnswerThree.setOnClickListener {
+            if(items[position].answer[2].truth){
+                items[position].apply { winds =  5}
+            } else {
+                items[position].apply { winds =  0}
+            }
             items[position].apply { answerUser = items[position].answer[2].option }
             onClickItem?.invoke(items[position])
             holder.binding.checkBoxAnswerOne.isClickable = false
@@ -96,6 +113,11 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.ViewHolder>() {
         }
 
         holder.binding.checkBoxAnswerFour.setOnClickListener {
+            if(items[position].answer[3].truth){
+                items[position].apply { winds =  5}
+            } else {
+                items[position].apply { winds =  0}
+            }
             items[position].apply { answerUser = items[position].answer[3].option }
             onClickItem?.invoke(items[position])
             holder.binding.checkBoxAnswerOne.isClickable = false

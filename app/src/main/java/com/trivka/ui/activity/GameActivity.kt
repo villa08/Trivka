@@ -2,7 +2,9 @@ package com.trivka.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +21,7 @@ class GameActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding
     private val gameAdapter by lazy { GameAdapter() }
     private lateinit var trivkViewModel: TrivkViewModel
+    private var countQuestion:Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,12 +42,20 @@ class GameActivity : AppCompatActivity() {
         gameAdapter.onClickItem = {
             Toast.makeText(this, it.answerUser, Toast.LENGTH_SHORT).show()
 
-            //countTrivkCoin(value = )
+            countTrivkCoin(value = it.winds)
         }
     }
 
     private fun countTrivkCoin(value: Int) {
-        binding.floatingButtonCount.text = value.toString()
+        binding.floatingButtonCount.visibility = View.VISIBLE
+        if (value != 0){
+            binding.floatingButtonCount.setBackgroundColor(ContextCompat.getColor(this, R.color.green_4CAF50))
+        } else {
+            binding.floatingButtonCount.setBackgroundColor(ContextCompat.getColor(this, R.color.red_F44336))
+        }
+
+        countQuestion += value
+        binding.floatingButtonCount.text = "$countQuestion TrivkCoin"
     }
 
     private fun showData(listBooks: List<TrivkModel>) {
